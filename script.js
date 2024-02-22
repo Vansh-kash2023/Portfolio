@@ -1,3 +1,5 @@
+// Navbar elements selection
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar')
 let sections = document.querySelectorAll('section')
@@ -23,3 +25,9 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x')
     navbar.classList.toggle('active')
 }
+
+// Removing Password Suggestion for "Full Name"
+
+document.getElementById("full_name").type = "text";
+
+// Typing Animation
