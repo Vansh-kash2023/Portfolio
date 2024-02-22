@@ -171,9 +171,9 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: 'Web Developer';
+    content: 'Frontend Developer';
     color: var(--main-color);
-    animation: words 20s infinite;
+    animation: words 10s infinite;
 }
 .text-animation span::after{
     content: "";
@@ -192,10 +192,10 @@ span{
 }
 @keyframes words{
     0%,50%{
-        content: 'Web Developer';
+        content: 'Frontend Developer';
     }
     51%,100%{
-        content: 'Python Expert';
+        content: 'Programmer';
     }
 }
 @keyframes typing{
