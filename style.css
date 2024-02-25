@@ -291,7 +291,7 @@ span{
 .service-box{
     background-color: var(--main-color);
     color: black;
-    height: 250px;
+    height: 300px;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -305,7 +305,7 @@ span{
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 200px;
+    max-height: 450px;
     max-width: fit-content;
     justify-content: center;
     align-items: baseline;
