@@ -246,6 +246,7 @@ span{
 .about-content p{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    text-align: justify;
 }
 .about-content .text-animation span::before{
     content: 'Web Developer';
@@ -327,6 +328,10 @@ span{
 .contact h2{
     margin-bottom: 3rem;
     color: white;
+}
+.contact h2 span{
+    color: var(--main-color);
+    text-shadow: 0 0 50px var(--main-color);
 }
 .contact form{
     max-width: 70rem;

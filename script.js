@@ -30,4 +30,33 @@ menuIcon.onclick = () => {
 
 document.getElementById("full_name").type = "text";
 
-// Typing Animation
+// Email Processing
+
+function sendMail() {
+    
+    (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("HpYVUxt17XHdDw9a7");
+    })();
+    var params = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        number : document.getElementById("number").value,
+        subject : document.getElementById("subject").value,
+        message : document.getElementById("message").value,
+    };
+    
+    const serviceID = "service_hmi4iah";
+    const templateID = "template_vwboa5c";
+    
+    emailjs.send(serviceID,templateID,params).then((res) => {
+        document.getElementById("name").value="";
+        document.getElementById("email").value="";
+        document.getElementById("number").value="";
+        document.getElementById("subject").value="";
+        document.getElementById("message").value="";
+        console.log(res);
+        alert("Your message was sent successfully")
+    },
+    (err) => {console.log(err);},
+    )};
