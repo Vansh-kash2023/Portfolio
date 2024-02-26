@@ -17,7 +17,7 @@
     --bg-color: #111111;
     --second-bg-color: #151515;
     --text-color: white;
-    --main-color: #04fffb;
+    --main-color: #e6b01f;
 }
 html{
     font-size: 62.5%;
@@ -297,8 +297,8 @@ span{
     transition: 0.3s ease-in-out;
 }
 .service-box:hover{
-    background: white;
-    color: var(--main-color);
+    /* background: white; */
+    /* color: var(--main-color); */
     transform: scale(1.03);
 }
 .service-box .service-info{
